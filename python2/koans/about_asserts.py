@@ -45,7 +45,8 @@ class AboutAsserts(Koan):
         """
         Some ways of asserting equality are better than others.
         """
-        expected_value = __
+        # expected_value = __
+        expected_value = 2
         actual_value = 1 + 1
 
         self.assertEqual(expected_value, actual_value)
