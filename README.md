@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/shivakrshn49/python-koans-excercise.png?branch=master)](https://travis-ci.org/shivakrshn49/python-koans-excercise)
+
 ============
 Python Koans
 ============
