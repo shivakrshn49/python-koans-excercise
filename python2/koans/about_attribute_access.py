@@ -196,13 +196,14 @@ class AboutAttributeAccess(Koan):
         fanboy.comic = 'The Laminator, issue #1'
         fanboy.pie = 'blueberry'
 
-        self.assertEqual(__, fanboy.a_pie)
+        # self.assertEqual(__, fanboy.a_pie)
+        self.assertEqual('blueberry', fanboy.a_pie)
 
         #
         # NOTE: Change the prefix to make this next assert pass
         #
 
-        prefix = '__'
+        prefix = 'my'
         self.assertEqual(
             "The Laminator, issue #1",
             getattr(fanboy, prefix + '_comic'))
