@@ -48,7 +48,8 @@ class AboutAttributeAccess(Koan):
     def test_all_attribute_reads_are_caught(self):
         catcher = self.CatchAllAttributeReads()
 
-        self.assertMatch(__, catcher.foobar)
+        # self.assertMatch(__, catcher.foobar)
+        self.assertMatch("Someone called 'foobar' and it could not be found", catcher.foobar)
 
     def test_intercepting_return_values_can_disrupt_the_call_chain(self):
         catcher = self.CatchAllAttributeReads()
