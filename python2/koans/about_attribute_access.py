@@ -19,8 +19,10 @@ class AboutAttributeAccess(Koan):
         try:
             typical.foobar()
         except Exception as exception:
-            self.assertEqual(__, exception.__class__)
-            self.assertMatch(__, exception[0])
+            # self.assertEqual(__, exception.__class__)
+            # self.assertMatch(__, exception[0])
+            self.assertEqual(AttributeError, exception.__class__)
+            self.assertMatch("'TypicalObject' object has no attribute 'foobar'", exception[0])
 
     def test_calling_getattribute_causes_an_attribute_error(self):
         typical = self.TypicalObject()
