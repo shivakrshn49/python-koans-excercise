@@ -72,7 +72,8 @@ class AboutAttributeAccess(Koan):
     def test_changing_getattribute_will_affect__the_getattr_function(self):
         catcher = self.CatchAllAttributeReads()
 
-        self.assertMatch(__, getattr(catcher, 'any_attribute'))
+        # self.assertMatch(__, getattr(catcher, 'any_attribute'))
+        self.assertMatch("Someone called 'any_attribute' and it could not be found", getattr(catcher, 'any_attribute'))
 
     # ------------------------------------------------------------------
 
