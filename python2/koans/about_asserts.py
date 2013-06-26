@@ -28,7 +28,8 @@ class AboutAsserts(Koan):
         """
         Sometimes we will ask you to fill in the values
         """
-        self.assertEqual(__, 1 + 1)
+        # self.assertEqual(__, 1 + 1)
+        self.assertEqual(2, 1 + 1)
 
     def test_assert_equality(self):
         """
