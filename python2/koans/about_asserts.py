@@ -21,7 +21,8 @@ class AboutAsserts(Koan):
         """
         Enlightenment may be more easily achieved with appropriate messages.
         """
-        self.assertTrue(False, "This should be true -- Please fix this")
+        # self.assertTrue(False, "This should be true -- Please fix this")
+        self.assertTrue(True)
 
     def test_fill_in_values(self):
         """
