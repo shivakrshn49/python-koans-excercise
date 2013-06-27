@@ -38,7 +38,7 @@ class AboutIteration(Koan):
         seq = [1, 2, 3]
 
         mapped_seq = map(self.add_ten, seq)
-        self.assertEqual(__, mapped_seq)
+        self.assertEqual([11, 12, 13], mapped_seq)
 
     def test_filter_selects_certain_items_from_a_list(self):
         def is_even(item):
