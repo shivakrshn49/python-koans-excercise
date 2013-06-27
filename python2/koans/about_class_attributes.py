@@ -34,7 +34,7 @@ class AboutClassAttributes(Koan):
         self.assertEqual(18, len(dir(fido)))
 
     def test_classes_have_methods(self):
-        self.assertEqual(__, len(dir(self.Dog)))
+        self.assertEqual(18, len(dir(self.Dog)))
 
     def test_creating_objects_without_defining_a_class(self):
         singularity = object()
