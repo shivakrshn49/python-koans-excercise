@@ -52,8 +52,8 @@ class AboutExceptions(Koan):
         except self.MySpecialError as ex:
             result = 'exception handled'
 
-        self.assertEqual(__, result)
-        self.assertEqual(__, ex[0])
+        self.assertEqual('exception handled', result)
+        self.assertEqual('My Message', ex[0])
 
     def test_else_clause(self):
         result = None
