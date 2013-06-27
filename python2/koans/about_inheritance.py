@@ -87,7 +87,8 @@ class AboutInheritance(Koan):
         try:
             name = snoopy.name
         except Exception as ex:
-            self.assertMatch(__, ex[0])
+            # self.assertMatch(__, ex[0])
+            self.assertMatch("'Pug' object has no attribute '_name'", ex[0])
 
     def test_base_init_has_to_be_called_explicitly(self):
         boxer = self.Greyhound("Boxer")
