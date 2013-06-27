@@ -33,7 +33,7 @@ class AboutDictionaries(Koan):
         babel_fish = {'one': 'uno', 'two': 'dos'}
         babel_fish['one'] = 'eins'
 
-        expected = {'two': 'dos', 'one': __}
+        expected = {'two': 'dos', 'one': 'eins'}
         self.assertEqual(expected, babel_fish)
 
     def test_dictionary_is_unordered(self):
