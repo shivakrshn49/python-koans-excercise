@@ -20,7 +20,8 @@ class AboutDeletingObjects(Koan):
             win = lottery_nums
         except Exception as e:
             pass
-        self.assertMatch(__, e[0])
+        # self.assertMatch(__, e[0])
+        self.assertMatch("local variable 'lottery_nums' referenced before assignment", e[0])
 
     # --------------------------------------------------------------------
 
