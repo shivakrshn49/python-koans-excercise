@@ -112,7 +112,8 @@ class AboutDeletingObjects(Koan):
         self.assertEqual('Patrick', citizen.name)
 
         del citizen.name
-        self.assertEqual(__, citizen.name)
+        # self.assertEqual(__, citizen.name)
+        self.assertEqual('Number Six', citizen.name)
 
     # --------------------------------------------------------------------
 
