@@ -75,10 +75,10 @@ class AboutIteration(Koan):
 
     def test_reduce_will_blow_your_mind(self):
         result = reduce(self.add, [2, 3, 4])
-        self.assertEqual(__, result)
+        self.assertEqual(9, result)
 
         result2 = reduce(self.multiply, [2, 3, 4], 1)
-        self.assertEqual(__, result2)
+        self.assertEqual(24, result2)
 
         # Extra Credit:
         # Describe in your own words what reduce does.
