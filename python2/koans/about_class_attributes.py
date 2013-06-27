@@ -65,7 +65,8 @@ class AboutClassAttributes(Koan):
         try:
             rover.wag()
         except Exception as ex:
-            self.assertMatch(__, ex[0])
+            # self.assertMatch(__, ex[0])
+            self.assertMatch("'Dog' object has no attribute 'wag'", ex[0])
 
     # ------------------------------------------------------------------
 
