@@ -36,13 +36,13 @@ class AboutInheritance(Koan):
 
     def test_subclasses_add_new_behavior(self):
         chico = self.Chihuahua("Chico")
-        self.assertEqual(__, chico.wag())
+        self.assertEqual("happy", chico.wag())
 
         try:
             fido = self.Dog("Fido")
             fido.wag()
         except StandardError as ex:
-            self.assertMatch(__, ex[0])
+            self.assertMatch("'Dog' object has no attribute 'wag'", ex[0])
 
     def test_subclasses_can_modify_existing_behavior(self):
         chico = self.Chihuahua("Chico")
