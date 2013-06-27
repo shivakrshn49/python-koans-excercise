@@ -57,12 +57,12 @@ class AboutIteration(Koan):
 
         # NOTE This still iterates through the whole names, so not particularly
         # efficient
-        self.assertEqual([__], filter(is_big_name, names)[:1])
+        self.assertEqual(['Clarence'], filter(is_big_name, names)[:1])
 
         # Boring but effective
         for item in names:
             if is_big_name(item):
-                self.assertEqual(__, item)
+                self.assertEqual('Clarence', item)
                 break
 
     # ------------------------------------------------------------------
