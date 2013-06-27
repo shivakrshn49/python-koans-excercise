@@ -100,7 +100,8 @@ class AboutClassAttributes(Koan):
         self.assertMatch('classmethod growl, arg: cls=Dog2', self.Dog2.growl())
 
     def test_staticmethods_are_unbound_functions_housed_in_a_class(self):
-        self.assertMatch(__, self.Dog2.bark())
+        # self.assertMatch(__, self.Dog2.bark())
+        self.assertMatch('staticmethod bark, arg: None', self.Dog2.bark())
 
     def test_staticmethods_also_overshadow_instance_methods(self):
         fido = self.Dog2()
