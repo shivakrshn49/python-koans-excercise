@@ -108,7 +108,7 @@ class AboutClasses(Koan):
 
     def test_init_provides_initial_values_for_instance_variables(self):
         fido = self.Dog5("Fido")
-        self.assertEqual(__, fido.name)
+        self.assertEqual('Fido', fido.name)
 
     def test_args_must_match_init(self):
         self.assertRaises(___, self.Dog5)  # Evaluates self.Dog5()
