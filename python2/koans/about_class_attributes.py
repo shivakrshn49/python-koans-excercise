@@ -105,7 +105,8 @@ class AboutClassAttributes(Koan):
 
     def test_staticmethods_also_overshadow_instance_methods(self):
         fido = self.Dog2()
-        self.assertMatch(__, fido.bark())
+        # self.assertMatch(__, fido.bark())
+        self.assertMatch('staticmethod bark, arg: None', fido.bark())
 
     # ------------------------------------------------------------------
 
@@ -136,7 +137,8 @@ class AboutClassAttributes(Koan):
         try:
             fido.name = "Fido"
         except Exception as ex:
-            self.assertMatch(__, ex[0])
+            # self.assertMatch(__, ex[0])
+            self.assertMatch("'classmethod' object is not callable", ex[0])
 
     def test_classes_and_instances_do_not_share_instance_attributes(self):
         fido = self.Dog3()
