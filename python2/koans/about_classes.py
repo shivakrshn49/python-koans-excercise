@@ -70,8 +70,10 @@ class AboutClasses(Koan):
         fido = self.Dog3()
         fido.set_name("Fido")
 
-        self.assertEqual(__, fido.get_name())  # access as method
-        self.assertEqual(__, fido.name)        # access as property
+        # self.assertEqual(__, fido.get_name())  # access as method
+        # self.assertEqual(__, fido.name)        # access as property
+        self.assertEqual('Fido', fido.get_name())  # access as method
+        self.assertEqual('Fido', fido.name)        # access as property
 
     # ------------------------------------------------------------------
 
