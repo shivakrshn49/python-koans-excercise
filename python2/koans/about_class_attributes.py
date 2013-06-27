@@ -89,7 +89,8 @@ class AboutClassAttributes(Koan):
             return "classmethod growl, arg: cls=" + cls.__name__
 
     def test_like_all_objects_classes_can_have_singleton_methods(self):
-        self.assertMatch(__, self.Dog2.growl())
+        # self.assertMatch(__, self.Dog2.growl())
+        self.assertMatch('classmethod growl, arg: cls=Dog2', self.Dog2.growl())
 
     def test_classmethods_are_not_independent_of_instance_methods(self):
         fido = self.Dog2()
