@@ -28,7 +28,7 @@ class AboutInheritance(Koan):
         self.assertEqual(True, issubclass(self.Chihuahua, self.Dog))
 
     def test_this_subclass_ultimately_inherits_from_object_class(self):
-        self.assertEqual(____, issubclass(self.Chihuahua, object))
+        self.assertEqual(True, issubclass(self.Chihuahua, object))
 
     def test_instances_inherit_behavior_from_parent_class(self):
         chico = self.Chihuahua("Chico")
