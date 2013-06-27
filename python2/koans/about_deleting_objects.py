@@ -129,4 +129,4 @@ class AboutDeletingObjects(Koan):
         sale = self.MoreOrganisedClosingSale()
         self.assertEqual(5, sale.jellies())
         del sale.jellies
-        self.assertEqual(__, sale.last_deletion)
+        self.assertEqual('jellies', sale.last_deletion)
