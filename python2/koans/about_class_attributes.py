@@ -25,7 +25,8 @@ class AboutClassAttributes(Koan):
         self.assertEqual(True, self.Dog.__class__ == type)
 
     def test_classes_are_objects_too(self):
-        self.assertEqual(__, issubclass(self.Dog, object))
+        # self.assertEqual(__, issubclass(self.Dog, object))
+        self.assertEqual(True, issubclass(self.Dog, object))
 
     def test_objects_have_methods(self):
         fido = self.Dog()
