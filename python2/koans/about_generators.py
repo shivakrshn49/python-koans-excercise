@@ -118,7 +118,8 @@ class AboutGenerators(Koan):
         try:
             generator.send(1 + 2)
         except TypeError as ex:
-            self.assertMatch(__, ex[0])
+            # self.assertMatch(__, ex[0])
+            self.assertMatch("can't send non-None value to a just-started generator", ex[0])
 
     # ------------------------------------------------------------------
 
