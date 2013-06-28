@@ -5,8 +5,6 @@ Python Koans
 
 [![Build Status](https://travis-ci.org/shivakrshn49/python-koans-excercise.png?branch=master)](https://travis-ci.org/shivakrshn49/python-koans-excercise)
 
-[![Coverage Status](https://coveralls.io/repos/shivakrshn49/python-koans-excercise/badge.png)](https://coveralls.io/r/shivakrshn49/python-koans-excercise)
-
 
 This is python koans practice excercise
 
