@@ -45,7 +45,7 @@ class AboutScope(Koan):
         self.assertEqual(False, self.str == type("HI"))
 
     def test_str_without_self_prefix_stays_in_the_global_scope(self):
-        self.assertEqual(____, str == type("HI"))
+        self.assertEqual(True, str == type("HI"))
 
     # ------------------------------------------------------------------
 
