@@ -87,6 +87,7 @@ class AboutDecoratingWithClasses(Koan):
         self.sound_check = self.doubleit(self.sound_check)
 
         # self.assertEqual(__, self.sound_check())
+        self.assertEqual('Testing..., Testing...', self.sound_check())
 
     # ------------------------------------------------------------------
 
