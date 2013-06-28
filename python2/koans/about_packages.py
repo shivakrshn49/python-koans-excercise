@@ -43,7 +43,7 @@ class AboutPackages(Koan):
         try:
             import a_normal_folder
         except ImportError as ex:
-            self.assertMatch(__, ex[0])
+            self.assertMatch('No module named a_normal_folder', ex[0])
 
     # ------------------------------------------------------------------
 
