@@ -50,7 +50,7 @@ class AboutStringManipulation(Koan):
 
         words = pattern.split(string)
 
-        self.assertEqual([__, __, __, __], words)
+        self.assertEqual(['the', 'rain', 'in', 'spain'], words)
 
         # `pattern` is a Python regular expression pattern which matches
         # ',' or ';'
