@@ -51,7 +51,8 @@ class AboutMethodBindings(Koan):
         try:
             obj.method.cherries = 3
         except AttributeError as ex:
-            self.assertMatch(__, ex[0])
+            # self.assertMatch(__, ex[0])
+            self.assertMatch("'instancemethod' object has no attribute 'cherries'", ex[0])
 
     def test_setting_attributes_on_methods_by_accessing_the_inner_function(self):
         obj = Class()
