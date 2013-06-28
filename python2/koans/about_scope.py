@@ -42,7 +42,7 @@ class AboutScope(Koan):
         self.assertEqual(False, AboutScope.str == str)
 
     def test_nested_string_is_not_the_same_as_the_system_string(self):
-        self.assertEqual(____, self.str == type("HI"))
+        self.assertEqual(False, self.str == type("HI"))
 
     def test_str_without_self_prefix_stays_in_the_global_scope(self):
         self.assertEqual(____, str == type("HI"))
