@@ -17,9 +17,23 @@
 # and
 #   about_triangle_project_2.py
 #
+
+def triangle_check(a, b, c):
+    if (a <= 0) or (b <= 0) or (c <= 0):
+        raise TriangleError('Triangle must have positive sides or values')
+    else:
+        pass  
+    if a + b <= c or a + c <= b or b + c <= a:
+        raise TriangleError("The values provided doesn't make a triangle")       
+
 def triangle(a, b, c):
-    # DELETE 'PASS' AND WRITE THIS CODE
-    pass
+    if a==b==c:
+    	return 'equilateral'
+    elif a==b or a==c or b==c:
+    	return 'isosceles'
+    elif a!=b!=c:
+    	return 'scalene'
+
 
 
 # Error class used in part 2.  No need to change this code.
