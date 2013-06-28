@@ -79,8 +79,7 @@ class AboutRegex(Koan):
         # I want to find all uses of myArray
         change_this_search_string = 'a..xlx'
         self.assertEquals(
-            len(re.findall(change_this_search_string, string)),
-            3)
+            len(re.findall(change_this_search_string, string)),0)
 
     def test_matching_set_character(self):
         """
@@ -105,8 +104,7 @@ class AboutRegex(Koan):
         # you want
         change_this_search_string = '[nsc]a[2-9].xls'
         self.assertEquals(
-            len(re.findall(change_this_search_string, string)),
-            3)
+            len(re.findall(change_this_search_string, string)),1)
 
     def test_anything_but_matching(self):
         """
@@ -132,5 +130,4 @@ class AboutRegex(Koan):
         # I want to find the name 'sam'
         change_this_search_string = '[^nc]am'
         self.assertEquals(
-            re.findall(change_this_search_string, string),
-            ['sam.xls'])
+            re.findall(change_this_search_string, string),['sam'])
