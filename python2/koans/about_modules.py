@@ -65,14 +65,14 @@ class AboutModules(Koan):
 
         # 'Goat' is on the __all__ list
         goat = Goat()
-        self.assertEqual(__, goat.name)
+        self.assertEqual('George', goat.name)
 
         # How about velociraptors?
         lizard = _Velociraptor()
-        self.assertEqual(__, lizard.name)
+        self.assertEqual("Cuddles", lizard.name)
 
         # SecretDuck? Never heard of her!
         try:
             duck = SecretDuck()
         except NameError as ex:
-            self.assertMatch(__, ex[0])
+            self.assertMatch("global name 'SecretDuck' is not defined", ex[0])
