@@ -35,7 +35,21 @@ from runner.koan import *
 
 def score(dice):
     # You need to write this method
-    pass
+    for i in range(1, 7):
+        if (dice.count(i) > 2):
+            if (i == 1):
+                points += 1000
+            else:
+                points += 100 * i
+            for k in range(3):
+                dice.remove(i)
+
+    for elem in dice:
+        if (elem == 1):
+            points += 100
+        if (elem == 5):
+            points += 50
+    return points
 
 
 class AboutScoringProject(Koan):
