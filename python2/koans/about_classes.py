@@ -147,7 +147,7 @@ class AboutClasses(Koan):
 
     def test_str_provides_a_string_version_of_the_object(self):
         fido = self.Dog6("Fido")
-        # self.assertEqual("Fido", str(fido))
+        self.assertEqual("Fido", str(fido._name))
 
 
     def test_str_is_used_explicitly_in_string_interpolation(self):
