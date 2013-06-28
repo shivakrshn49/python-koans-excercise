@@ -31,12 +31,15 @@ class AboutMethodBindings(Koan):
         self.assertEqual('parrot', obj.method.im_func(obj))
 
     def test_functions_have_attributes(self):
-        self.assertEqual(__, len(dir(function)))
-        self.assertEqual(__, dir(function) == dir(Class.method.im_func))
+        # self.assertEqual(__, len(dir(function)))
+        # self.assertEqual(__, dir(function) == dir(Class.method.im_func))
+        self.assertEqual(31, len(dir(function)))
+        self.assertEqual(True, dir(function) == dir(Class.method.im_func))
 
     def test_bound_methods_have_different_attributes(self):
         obj = Class()
-        self.assertEqual(__, len(dir(obj.method)))
+        # self.assertEqual(__, len(dir(obj.method)))
+        self.assertEqual(23, len(dir(obj.method)))
 
     def test_setting_attributes_on_an_unbound_function(self):
         function.cherries = 3
