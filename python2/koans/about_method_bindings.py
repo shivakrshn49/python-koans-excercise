@@ -70,7 +70,8 @@ class AboutMethodBindings(Koan):
         try:
             cls = function2.get_fruit.im_self
         except AttributeError as ex:
-            self.assertMatch(__, ex[0])
+            # self.assertMatch(__, ex[0])
+            self.assertMatch("'function' object has no attribute 'im_self'", ex[0])
 
     # ------------------------------------------------------------------
 
