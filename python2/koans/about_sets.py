@@ -14,7 +14,7 @@ class AboutSets(Koan):
         self.assertEqual(set(['Malcolm', 'Matunas', 'MacLeod', 'Ramirez']), there_can_only_be_only_one)
 
     def test_sets_are_unordered(self):
-        self.assertEqual(set([__, __, __, __, __]), set('12345'))
+        self.assertEqual(set(['1', '3', '2', '5', '4']), set('12345'))
 
     def test_convert_the_set_into_a_list_to_sort_it(self):
         self.assertEqual(__, sorted(set('13245')))
