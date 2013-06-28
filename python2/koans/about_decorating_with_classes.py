@@ -118,9 +118,10 @@ class AboutDecoratingWithClasses(Koan):
         pass
 
     def test_decorator_with_an_argument(self):
-        pass
         # self.assertEqual(__, self.count_badly(2))
         # self.assertEqual(__, self.count_badly.__doc__)
+        self.assertEqual(5, self.count_badly(2))
+        self.assertEqual("Increments a value by one. Kind of.", self.count_badly.__doc__)
 
     def test_documentor_which_already_has_a_docstring(self):
         # self.assertEqual(__, self.idler.__doc__)
