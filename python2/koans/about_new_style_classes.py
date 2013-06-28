@@ -34,14 +34,14 @@ class AboutNewStyleClasses(Koan):
     # ------------------------------------------------------------------
 
     def test_old_style_classes_have_type_but_no_class_attribute(self):
-        self.assertEqual(__, self.OldStyleClass.__class__)
+        self.assertEqual('classobj', type(self.OldStyleClass).__name__)
 
         try:
             cls = self.OldStyleClass.__class__
         except Exception as ex:
             pass
 
-        self.assertMatch(__, ex[0])
+        self.assertMatch("class OldStyleClass has no attribute '__class__'", ex[0])
 
     def test_new_style_classes_have_same_class_as_type(self):
         new_style = self.NewStyleClass()
