@@ -37,7 +37,7 @@ class AboutMonkeyPatching(Koan):
         try:
             int.is_even = lambda self: (self % 2) == 0
         except StandardError as ex:
-            self.assertMatch(__, ex[0])
+            self.assertMatch("can't set attributes of built-in/extension type 'int'", ex[0])
 
     # ------------------------------------------------------------------
 
