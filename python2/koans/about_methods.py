@@ -24,6 +24,7 @@ class AboutMethods(Koan):
             my_global_function()
         except Exception as exception:
             # self.assertEqual(__, exception.__class__)
+            self.assertEqual('TypeError', type(exception).__name__)
             self.assertMatch(
                 r'my_global_function\(\) takes exactly 2 arguments \(0 given\)',
                 exception[0])
