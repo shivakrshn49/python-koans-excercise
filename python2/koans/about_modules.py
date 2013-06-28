@@ -50,7 +50,7 @@ class AboutModules(Koan):
         try:
             private_squirrel = _SecretSquirrel()
         except NameError as ex:
-            self.assertMatch(__, ex[0])
+            self.assertMatch("global name '_SecretSquirrel' is not defined", ex[0])
 
     def test_private_attributes_are_still_accessible_in_modules(self):
         from local_module import Duck  # local_module.py
