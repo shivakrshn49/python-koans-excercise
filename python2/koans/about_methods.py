@@ -120,7 +120,8 @@ class AboutMethods(Koan):
         "shall"
         "not"
         pass
-        self.assertEqual(____, "Still got to this line" != None)
+        # self.assertEqual(____, "Still got to this line" != None)
+        self.assertEqual(True, "Still got to this line" != None)
 
     # ------------------------------------------------------------------
 
