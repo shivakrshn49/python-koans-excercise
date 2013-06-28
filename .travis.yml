@@ -9,7 +9,7 @@ script:
     - PYTHON_VER=`python -c 'import sys; print(sys.version_info[0])'`
     - cd python$PYTHON_VER
     - python _runner_tests.py
-    - python contemplate_koans.py about_regex about_scope about_sets about_string_manipulation about_strings about_true_and_false about_tuples about_with_statements 
+    - python contemplate_koans.py 
 
 #   - python contemplate_koans.py                          # Run all the koans
 #   - python contemplate_koans.py about_asserts about_none # Run a subset of koans
