@@ -22,11 +22,11 @@ class AboutNewStyleClasses(Koan):
         self.assertEqual(False, issubclass(self.OldStyleClass, object))
 
     def test_new_style_classes_have_more_attributes(self):
-        self.assertEqual(__, len(dir(self.OldStyleClass)))
-        self.assertEqual(__, self.OldStyleClass.__doc__)
-        self.assertEqual(__, self.OldStyleClass.__module__)
+        self.assertEqual(2, len(dir(self.OldStyleClass)))
+        self.assertEqual("An old style class", self.OldStyleClass.__doc__)
+        self.assertEqual('koans.about_new_style_classes', self.OldStyleClass.__module__)
 
-        self.assertEqual(__, len(dir(self.NewStyleClass)))
+        self.assertEqual(18, len(dir(self.NewStyleClass)))
         # To examine the available attributes, run
         # 'dir(<Class name goes here>)'
         # from a python console
