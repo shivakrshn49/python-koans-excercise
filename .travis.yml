@@ -21,6 +21,10 @@ script:
 notifications:
   email: true
 
+after_success:
+  - coveralls
+
+
 # Some other koans (see runner/sensei.py or "ls koans" to see the light):
 
 # about_none about_lists about_list_assignments about_dictionaries
